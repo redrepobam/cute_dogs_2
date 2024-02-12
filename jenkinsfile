@@ -1,0 +1,48 @@
+pipeline {
+    node {
+        agent 'jenkinsagent'
+    }
+
+    triggers {
+        pollSCM '*/5 * * * *'
+    }
+
+
+
+    stages {
+
+
+        stage('BUILD'){
+            steps{
+                echo ' BUILD'
+                sh '''
+                echo hi
+                '''
+            }
+        }
+ 
+        stage('TEST'){
+            steps{
+                echo ' TEST '
+                sh '''
+                echo hi
+                '''
+            }
+        }
+ 
+ 
+       stage('DEPLOY'){
+            steps{
+                echo ' DEPLOY '
+                sh '''
+                echo hi
+                '''
+            }
+        }
+ 
+ 
+
+ 
+    }
+
+}
