@@ -1,29 +1,29 @@
 pipeline {
+    
     node {
-        agent 'jenkinsagent'
+        agenet 'jenkinsagent'
     }
 
     triggers {
         pollSCM '*/1 * * * *'
     }
 
-
-
     stages {
-
-
+ 
+ 
         stage('BUILD'){
-            steps{
-                echo ' BUILD'
+            steps {
+                echo "hi"
                 sh '''
                 echo hi
                 '''
             }
         }
+ 
  
         stage('TEST'){
-            steps{
-                echo ' TEST '
+            steps {
+                echo "hi"
                 sh '''
                 echo hi
                 '''
@@ -31,9 +31,9 @@ pipeline {
         }
  
  
-       stage('DEPLOY'){
-            steps{
-                echo ' DEPLOY '
+        stage('DEPLOY'){
+            steps {
+                echo "hi"
                 sh '''
                 echo hi
                 '''
@@ -41,8 +41,7 @@ pipeline {
         }
  
  
-
+ 
  
     }
-
 }
