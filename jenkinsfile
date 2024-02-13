@@ -38,6 +38,8 @@ pipeline {
             steps {
                 echo "hi"
                 sh '''
+                node -v
+                echo above is node version
                 git --version
                 git --version         
                 '''
