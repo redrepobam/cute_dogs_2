@@ -38,7 +38,8 @@ pipeline {
             steps {
                 echo "hi"
                 sh '''
-                echo hi
+                git -v
+                git -v                
                 '''
             }
         }
