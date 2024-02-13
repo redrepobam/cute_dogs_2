@@ -1,12 +1,11 @@
 pipeline {
     
-    node {
-        agent {
-
+    agent {
+        node {
             label 'jenkinsagent'
-
         }
     }
+
 
     triggers {
         pollSCM '*/1 * * * *'
