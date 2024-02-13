@@ -1,7 +1,11 @@
 pipeline {
     
     node {
-        agent 'jenkinsagent'
+        agent {
+
+            label 'jenkinsagent'
+
+        }
     }
 
     triggers {
