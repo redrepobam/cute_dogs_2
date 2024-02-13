@@ -38,8 +38,8 @@ pipeline {
             steps {
                 echo "hi"
                 sh '''
-                git -v
-                git -v                
+                git --version
+                git --version         
                 '''
             }
         }
